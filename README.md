@@ -19,7 +19,7 @@ The repo is disbaled after the runit installation.
 
 The final image size is found to be approx. 435 mb (starting from base centos image of 200 mb)
 
-## How to build?
+## How to build Docker Image?
 
 change to Dockerfile directory and execute the docker build command.
 
@@ -54,3 +54,4 @@ Sample example of docker build is:
 
    to set the environment.
 
+Any Suggestions are welcome!!!
