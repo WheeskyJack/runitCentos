@@ -16,6 +16,7 @@ mkdir -p /etc/runit
 
 ## create yum-repo for runit process and install from it
 curl -s https://packagecloud.io/install/repositories/imeyer/runit/script.rpm.sh | bash
-yum install -y runit-2.1.1-7.el7.centos.x86_64
+yum install -y runit
+
 ## disable the runit yum-repo
 yum-config-manager --disable imeyer_runit
