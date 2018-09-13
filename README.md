@@ -9,6 +9,8 @@ You can use it as a base for your own Docker images.
 
 This only aims to extract the runit part (my_init section) of the [baseimage-docker](https://github.com/phusion/baseimage-docker).
 
+To see how to add the service in container using this image, refer the seperate branch of the repo [example_service](https://github.com/WheeskyJack/runitCentos/tree/example_service)
+
 ## What's inside the image?
 
 The centos(latest) image is used; epel-release, python3.6 are installed in it along with necessary dependencies.
