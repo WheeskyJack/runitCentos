@@ -17,9 +17,16 @@ The centos(latest) image is used; epel-release, python3.6 are installed in it al
 
 It also configures imeyer_runit repository for yum installation of runit.
 
-The repo is disbaled after the runit installation.
+The imeyer_runit repo is disbaled after the runit installation.
 
-The final image size is found to be approx. 435 mb (starting from base centos image of 200 mb)
+Starting from base centos image of 200 mb,
+the final image size is found to be approx.
+
+262 MB (without yum update of base centos image)
+
+299 MB (with yum update of base centos image)
+
+(as of Thu Sep 13,2018)
 
 ## How to build Docker Image?
 
