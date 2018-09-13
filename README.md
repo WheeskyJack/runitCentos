@@ -15,24 +15,24 @@ To see how to add the service in container using this image, refer the seperate 
 
 The centos(latest) image is used; epel-release, python3.6 are installed in it along with necessary dependencies.
 
-It also configures imeyer_runit repository for yum installation of runit.
+It also configures imeyer_runit repositories for yum installation of runit.
 
-The imeyer_runit repo is disbaled after the runit installation.
+The imeyer_runit repositories are disbaled after the runit installation.
 
-Starting from base centos image of 200 mb,
+Starting from base centos image of 200 MB,
 the final image size is found to be approx.
 
-262 MB (without yum update of base centos image)
+**262 MB** (without yum update of base centos image)
 
-299 MB (with yum update of base centos image)
+**299 MB** (with yum update of base centos image)
 
 (as of Thu Sep 13,2018)
 
 ## How to build Docker Image?
 
-change to Dockerfile directory and execute the docker build command.
+Clone the repository and change to the directory where Dockerfile exists; execute the docker build command.
 
-Sample example of docker build is:
+Sample example of docker build command is:
 
         docker build --network=host -t centos_runit_github:github .
 
@@ -48,7 +48,7 @@ Sample example of docker build is:
 
         printf "\nproxy=http://10.144.1.10:8080" >> /etc/yum.conf
 
-   in beginning of prepare.sh script. This will enable all the subsequent yum commands to use the proxy for their operations.
+   in the beginning of prepare.sh script. This will enable all the subsequent yum commands to use the given proxy for their operations.
 
    Do not forget to remove this entry from the yum.conf at the end of image build as a part of cleanup.
 
