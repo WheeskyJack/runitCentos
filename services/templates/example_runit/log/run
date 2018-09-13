@@ -1,2 +1,2 @@
 #!/bin/sh
-exec chpst -u foo svlogd -tt /opt/example/logs
+exec chpst -u foo svlogd -tt /opt/serviceFiles/example/logs
