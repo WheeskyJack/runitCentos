@@ -19,4 +19,4 @@ curl -s https://packagecloud.io/install/repositories/imeyer/runit/script.rpm.sh 
 yum install -y runit
 
 ## disable the runit yum-repo
-yum-config-manager --disable imeyer_runit
+yum-config-manager --disable imeyer_runit*
